@@ -369,6 +369,9 @@ $colors: (
       .#{$color_name} {
         background-color: $color_value !important;
       }
+      a.#{$color_name}:hover, .btn.#{$color_name}:hover {
+        background-color: lighten($color_value, 5%) !important;
+      }
       .#{$color_name}-text {
         color: $color_value !important;
       }
@@ -376,6 +379,9 @@ $colors: (
     @else {
       .#{$color_name}.#{$color_type} {
         background-color: $color_value !important;
+      }      
+      a.#{$color_name}.#{$color_type}:hover, .btn.#{$color_name}.#{$color_type}:hover {
+        background-color: lighten($color_value, 5%) !important;
       }      
       .#{$color_name}-text.text-#{$color_type} {
         color: $color_value !important;
